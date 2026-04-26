@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachel's Complete Guide to Graduate School Applications</title>
+  <meta name="description" content="Rachel White's complete guide to Physics PhD applications — including a suggested timeline, email templates, writing advice, and downloadable application materials." />
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Times+New+Roman&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --purple-dark: #5b3f85;
+      --purple-light: #c2aae6;
+      --purple-mid: #7d5caa;
+      --purple-pale: #f0eaf8;
+      --purple-border: #d4c0f0;
+      --white: #ffffff;
+      --text: #1a1a2e;
+      --text-muted: #4a3f6b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      color: var(--text);
+      background: #faf8fd;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    /* ─── HEADER ─── */
+    .site-header {
+      background: var(--purple-dark);
+      color: var(--white);
+      padding: 72px 48px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .site-header::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      border: 2px solid rgba(194,170,230,0.25);
+      pointer-events: none;
+    }
+
+    .site-header::after {
+      content: '';
+      position: absolute;
+      bottom: -60px;
+      right: 60px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 2px solid rgba(194,170,230,0.15);
+      pointer-events: none;
+    }
+
+    .header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .header-byline {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--purple-light);
+      margin-bottom: 18px;
+    }
+
+    .header-title {
+      font-family: 'Yeseva One', serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1.12;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .header-title em {
+      color: var(--purple-light);
+      font-style: italic;
+    }
+
+    .header-desc {
+      font-size: 16px;
+      color: rgba(255,255,255,0.82);
+      max-width: 560px;
+      margin-top: 18px;
+      line-height: 1.6;
+    }
+
+    .header-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 36px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-num {
+      font-family: 'Yeseva One', serif;
+      font-size: 1.8rem;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--purple-light);
+      margin-top: 4px;
+    }
+
+    /* ─── NAV ─── */
+    .site-nav {
+      background: var(--white);
+      border-bottom: 2px solid var(--purple-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 16px rgba(91,63,133,0.08);
+    }
+
+    .site-nav ul {
+      display: flex;
+      list-style: none;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 24px;
+      overflow-x: auto;
+      gap: 0;
+      scrollbar-width: none;
+    }
+
+    .site-nav ul::-webkit-scrollbar { display: none; }
+
+    .site-nav li a {
+      display: block;
+      padding: 16px 18px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 14px;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 3px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .site-nav li a:hover {
+      color: var(--purple-dark);
+      border-bottom-color: var(--purple-dark);
+    }
+
+    /* ─── MAIN LAYOUT ─── */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 32px 100px;
+    }
+
+    /* ─── SECTIONS ─── */
+    .section {
+      margin-bottom: 72px;
+    }
+
+    .section-title {
+      font-family: 'Yeseva One', serif;
+      font-size: 2rem;
+      color: var(--purple-dark);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--purple-border);
+    }
+
+    .section-subtitle {
+      font-family: 'Yeseva One', serif;
+      font-size: 1.25rem;
+      color: var(--purple-mid);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--purple-dark);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--purple-mid);
+    }
+
+    /* ─── REMINDER BOX ─── */
+    .reminder-box {
+      background: var(--purple-pale);
+      border-left: 5px solid var(--purple-dark);
+      border-radius: 0 10px 10px 0;
+      padding: 24px 28px;
+      margin: 28px 0;
+    }
+
+    .reminder-box strong {
+      display: block;
+      font-family: 'Yeseva One', serif;
+      font-size: 1rem;
+      color: var(--purple-dark);
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── TIMELINE ─── */
+    .timeline {
+      position: relative;
+      padding-left: 32px;
+      margin-top: 12px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 15px;
+      height: calc(100% - 80px);
+      width: 2px;
+      background: linear-gradient(to bottom, var(--purple-dark), var(--purple-light));
+      border-radius: 2px;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -36px;
+      top: 7px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--purple-dark);
+      border: 2px solid var(--purple-light);
+    }
+    .timeline-period {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--purple-mid);
+      margin-bottom: 4px;
+    }
+    .timeline-heading {
+      font-family: 'Yeseva One', serif;
+      font-size: 1.1rem;
+      color: var(--purple-dark);
+      margin-bottom: 6px;
+    }
+    .timeline-body {
+      font-size: 16px;
+      color: var(--text);
+      margin: 0;
+    }
+    
+    /* ─── EMAIL BOXES ─── */
+    .email-box {
+      border: 1.5px solid var(--purple-border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 24px 0;
+      box-shadow: 0 4px 18px rgba(91,63,133,0.07);
+    }
+
+    .email-header {
+      background: var(--purple-dark);
+      color: var(--white);
+      padding: 12px 22px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .email-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--purple-light);
+      opacity: 0.7;
+    }
+
+    .email-body {
+      background: var(--white);
+      padding: 28px 28px 24px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    .email-body p {
+      margin-bottom: 14px;
+    }
+
+    .email-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .email-tag {
+      display: inline-block;
+      background: var(--purple-pale);
+      color: var(--purple-dark);
+      border: 1px solid var(--purple-border);
+      border-radius: 4px;
+      padding: 0px 6px;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    /* ─── DOCUMENT CARDS ─── */
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .doc-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background: var(--white);
+      border: 1.5px solid var(--purple-border);
+      border-radius: 12px;
+      padding: 22px 20px 18px;
+      text-decoration: none;
+      color: var(--text);
+      transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
+      box-shadow: 0 2px 8px rgba(91,63,133,0.05);
+    }
+
+    .doc-card:hover {
+      border-color: var(--purple-dark);
+      box-shadow: 0 6px 20px rgba(91,63,133,0.13);
+      transform: translateY(-2px);
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .doc-icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: var(--purple-mid);
+    }
+
+    .doc-title {
+      font-family: 'Yeseva One', serif;
+      font-size: 1rem;
+      color: var(--purple-dark);
+      margin-bottom: 8px;
+    }
+
+    .doc-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.55;
+      flex: 1;
+      margin: 0;
+    }
+
+    .doc-btn {
+      margin-top: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--purple-dark);
+      color: var(--white);
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 13px;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .doc-btn:hover {
+      background: var(--purple-mid);
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    /* ─── CONTACT CARDS ─── */
+    .contact-grid {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      border: 1.5px solid var(--purple-border);
+      border-radius: 10px;
+      padding: 16px 22px;
+      text-decoration: none;
+      color: var(--purple-dark);
+      font-family: 'Yeseva One', serif;
+      font-size: 1rem;
+      transition: box-shadow 0.2s, border-color 0.2s;
+      box-shadow: 0 2px 8px rgba(91,63,133,0.05);
+    }
+
+    .contact-card:hover {
+      border-color: var(--purple-dark);
+      box-shadow: 0 4px 16px rgba(91,63,133,0.13);
+      text-decoration: none;
+      color: var(--purple-dark);
+    }
+
+    .contact-icon {
+      font-size: 1.3rem;
+    }
+
+    /* ─── BULLET LISTS (only where PDF has them) ─── */
+    .doc-list {
+      list-style: disc;
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    .doc-list li {
+      margin-bottom: 8px;
+      font-size: 17px;
+      color: var(--text);
+    }
+
+    /* ─── SIGNATURE BLOCK ─── */
+    .sig-block {
+      background: var(--purple-pale);
+      border: 1px solid var(--purple-border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 8px;
+      display: inline-block;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .site-header { padding: 48px 24px 40px; }
+      main { padding: 40px 20px 80px; }
+      .header-stats { gap: 24px; }
+      .doc-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── HEADER ─── -->
+<header class="site-header">
+  <div class="header-inner" style="display:flex; align-items:center; justify-content:space-between; gap:48px;">
+    <div>
+      <p class="header-byline">A Resource by Rachel White &middot; The Ohio State University</p>
+      <h1 class="header-title">Rachel's Complete Guide to <em>Graduate School Applications</em></h1>
+      <p class="header-desc">Everything I learned about applying to Physics Ph.D. programs, including a suggested timeline, email templates, writing advice, and downloadable application materials.</p>
+    </div>
+    <img src="headshot.jpg" alt="Rachel White" style="width:220px; height:220px; border-radius:50%; object-fit:cover; border:3px solid var(--purple-light); flex-shrink:0;">
+  </div>
+</header>
+
+<!-- ─── NAV ─── -->
+<nav class="site-nav">
+  <ul>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#researching">Researching Programs</a></li>
+    <li><a href="#emailing">Emailing Potential Advisors</a></li>
+    <li><a href="#writing">Writing Advice</a></li>
+    <li><a href="#university-materials">University Application Materials</a></li>
+    <li><a href="#nsf-grfp">NSF-GRFP Application Materials</a></li>
+    <li><a href="#misc">Miscellaneous Advice</a></li>
+    <li><a href="#after-offer">After Receiving an Offer</a></li>
+    <li><a href="#documents">Documents</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ─── MAIN ─── -->
+<main>
+
+  <!-- Getting Started -->
+  <section class="section" id="getting-started">
+    <h2 class="section-title">Getting Started</h2>
+    <p>Hello! My name is Rachel White, and CONGRATULATIONS on deciding to apply for graduate school! This is not an easy decision, and I applaud you for your hard work and dedication to get here today.</p>
+    <p>I applied to graduate school for a Ph.D. in Physics during the 2025-26 cycle. I am grateful to say I was accepted to seven of the ten universities I applied to, including being granted five fellowships, and I was also an awardee of the National Science Foundation (NSF)'s Graduate Research Fellowship (GRFP)!</p>
+    <p>Throughout this process, I gained a lot of valuable knowledge about creating good applications and want nothing more than to share this information with others. This website holds all of the relevant materials I used throughout my applications to universities and for the NSF-GRFP.</p>
+
+    <div class="reminder-box">
+      <strong>IMPORTANT REMINDER</strong>
+      The materials in this drive are the materials I used in my applications. DO NOT under ANY circumstances copy and paste what I have written for your personal applications. I am sharing these as examples of the flow, content, and arguments that worked for me and my applications. I have removed all names (professors, universities, etc) and placed [Professor], [University], or [Redacted] in their place.
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section" id="timeline">
+    <h2 class="section-title">Timeline</h2>
+    <p>The timeline below is what I followed during my application process. This is in no way gospel! Yours may look different, but remember that more time is always better. Definitely make sure your mentors have ample time to read your materials and provide feedback. DON'T PROCRASTINATE.</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <p class="timeline-period">May – July</p>
+        <p class="timeline-heading">Research Programs of Interest</p>
+        <p class="timeline-body">Create list of universities and professors at each program you're interested in applying to.</p>
+      </div>
+      <div class="timeline-item">
+        <p class="timeline-period">August</p>
+        <p class="timeline-heading">Send Initial Emails of Interest to Professors</p>
+        <p class="timeline-body">Email potential advisors to state your interest in their research groups. Also email your three letter writers to ask if they will support your applications (including the GRFP if applicable).</p>
+      </div>
+      <div class="timeline-item">
+        <p class="timeline-period">August – November</p>
+        <p class="timeline-heading">Apply to the NSF-GRFP</p>
+        <p class="timeline-body">Find a professor to write your proposal with you. Prepare your application materials and have as many people as possible review them.</p>
+      </div>
+      <div class="timeline-item">
+        <p class="timeline-period">November – December</p>
+        <p class="timeline-heading">Apply to Universities</p>
+        <p class="timeline-body">Search for application fee waivers. Prepare your application materials and have as many people as possible review them.</p>
+      </div>
+      <div class="timeline-item">
+        <p class="timeline-period">December</p>
+        <p class="timeline-heading">Send Follow-Up Emails to Professors</p>
+        <p class="timeline-body">Let professors know you've officially submitted your application to their university and remain interested in their group.</p>
+      </div>
+      <div class="timeline-item">
+        <p class="timeline-period">Spring</p>
+        <p class="timeline-heading">Receiving offers!</p>
+        <p class="timeline-body">Attend visit weekends, compare offers holistically, and make your decision by April 15th.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Researching Programs -->
+  <section class="section" id="researching">
+    <h2 class="section-title">Researching Programs</h2>
+    <h3 class="section-subtitle">Programs</h3>
+    <p>To find programs I was interested in, I first looked at the universities that my current research experiments or related ones collaborated with. So for me, I worked on ANITA and Project 8 (astro-particle experiments with a focus on neutrinos) as an undergraduate, so I looked for universities working on IceCube, PUEO, RNO-G, etc. Look at the lists of authors/universities in the experiment's publications! Some people also find <a href="https://gradschoolshopper.com/" target="_blank">Graduate School Shopper</a> to be helpful.</p>
+
+    <h3 class="section-subtitle">Advisors</h3>
+    <p>Your advisor will be someone you work with EVERY DAY for five or more years. Therefore, they should be someone who uplifts and supports you every step of the way. Figure out what style of advising works best for you. Do you prefer hands-on or hands-off? Do you prefer check-in meetings with your advisor to be daily, weekly, or monthly? Do you have preferences on gender or other factors? Make sure to find an advisor that fits your needs as a student and researcher.</p>
+    <p>If there is only one professor at the university you see yourself working with, it's probably not a great option. Just in case things don't work out with your primary advisor due to a change in research interests, a difference in work expectations, or other reasons, it's great to have a couple groups you could see yourself working in.</p>
+
+    <h3 class="section-subtitle">Funding</h3>
+    <p>Funding is also a huge part of your graduate school career! Some professors will say they "may or may not have money" when you express interest in their program... in this day and age funding is never guaranteed, but you definitely don't want to attend a school for a professor/group that suddenly can't support you. Be mindful of that!</p>
+    <p>If graduate students in a specific group are a teaching assistant's (TA) late in their career, this may not be a good sign of the funding situation. This means the professor can't support their older students fully as a research assistant (RA). Most of the time students are TAs their first one or two years (or less if you're lucky), and then they do research full time from there on out.</p>
+    <p>There are so many fellowships and financial opportunities that you can be applying for as well (like the NSF-GRFP)! Not only could these provide you the freedom to pick your thesis project without the constraints of a advisor's funding, but they also make you a more competitive applicant. Professors love free students!</p>
+
+    <h3 class="section-subtitle">Build a Spreadsheet</h3>
+    <p>A spreadsheet is a fantastic way to track which programs and professors you're most interested in.</p>
+    <p>Within the spreadsheet I designed (which is provided as a template in the documents section), I had an overview sheet that was followed by individual sheets for each university. On those, I tracked the professors I was interested in and what their email responses were. This helped me to easily recall which universities have openings and which didn't. I provided an example of Michigan State (the university I decided to attend! #GoGreen).</p>
+    <p>Obviously, you can set your spreadsheet up however you want! Once I had acceptances, then I looked further into location, financial offers, department ranking, and other factors, but I kept those things pretty general for this spreadsheet to focus more on the professors available.</p>
+  </section>
+
+  <!-- Emailing Professors -->
+  <section class="section" id="emailing">
+    <h2 class="section-title">Emailing Potential Advisors</h2>
+    <p>As stated in the timeline above, I emailed all of the professors at each university that I was interested in to find out if they had openings for me. I would definitely recommend doing this because it got my name out to members of the admissions committee before I had even submitted my applications!</p>
+
+    <h3 class="section-subtitle">Formatting</h3>
+    <p>Keep these emails extremely short because professors receive a large amount of emails in a day. Include your name and major, the professor(s) you've been doing research under, and ask if they're taking any students. However, if they don't directly collaborate with your undergraduate research advisor(s), it may not be super beneficial to mention a person in the email that they don't know. Also attach your CV! If you're applying to the NSF-GRFP, you can choose to mention it in your emails because this may pique their interest!</p>
+
+    <h3 class="section-subtitle">Navigating Responses</h3>
+    <p>Do not take it personally if they don't respond. It's helpful to know if there are definitely or definitely not available spots in your subfield, but the lack of a response is not a reflection of their interest in you. I got accepted to schools where I hadn't heard back from any professors!</p>
+    <p>I emailed all the professors I was interested in once in early August following the template provided below. For the professors who responded, I answered their questions or thanked them for their time in a follow-up email. Then, I replied to all of these emails once more in December to say I officially submitted my application to their school and remain interested in working with them. Obviously, if a professor responds to your initial email and says they are definitely not taking a student, don't spam them with another email later (or mention their name in your application).</p>
+    <p>I additionally reached out to graduate students in the groups I was interested in, but didn't do this until AFTER I was accepted to that school. You can talk to graduate students at visit weekends to see what they think of the group/school/city, and then email them afterwards if you still have questions.</p>
+
+    <h3 class="section-subtitle">Email Signature</h3>
+    <p>If you haven't already, create an email signature that will automatically sign-off the emails you send from your university email address. Mine looked like this (but make yours unique!):</p>
+    <div class="sig-block">
+      Rachel White (she/her)<br>
+      B.S. Astronomy &amp; Astrophysics<br>
+      Undergraduate Student Researcher<br>
+      Department of Astronomy, The Ohio State University<br>
+      191 W. Woodruff Ave, Columbus, OH 43210
+    </div>
+
+    <h3 class="section-subtitle">Example Emails</h3>
+
+    <div class="email-box">
+      <div class="email-header"><span class="email-dot"></span> First Email — August</div>
+      <div class="email-body">
+        <p>Dear <span class="email-tag">[Professor]</span>,</p>
+        <p>Good afternoon!</p>
+        <p>My name is Rachel White, and I am a current senior studying astronomy and astrophysics at The Ohio State University. I'm planning to apply to <span class="email-tag">[University]</span> for a Ph.D. in Physics. I currently work under <span class="email-tag">[Professor]</span> at OSU on radio neutrino detection, and would love to continue experimental particle physics research. My CV is attached if you have further questions on my previous experience.</p>
+        <p>I am particularly interested in your work, especially on <span class="email-tag">[experiment]</span> and <span class="email-tag">[experiment]</span>. I was wondering if you are planning to take any graduate students beginning in autumn of <span class="email-tag">[Year]</span>, as I would certainly love to apply to <span class="email-tag">[University]</span> with your research in mind!</p>
+        <p>I look forward to hearing from you!</p>
+        <p>Best regards,<br><span class="email-tag">[Signature]</span></p>
+      </div>
+    </div>
+
+    <div class="email-box">
+      <div class="email-header"><span class="email-dot"></span> Second Email — December</div>
+      <div class="email-body">
+        <p>Dear <span class="email-tag">[Professor]</span>,</p>
+        <p>I hope you're doing well and that the semester is wrapping up smoothly. I wanted to share that I've officially submitted my application to <span class="email-tag">[University]</span>! Thank you again for your guidance during our previous conversation. I understand that group availability will become clearer later in the process, but I remain very excited about the possibility of working with your group.</p>
+        <p>If you have any recommendations for additional materials or anything you'd like me to expand upon, I would be happy to provide them. Thank you again for your time and for considering my application.</p>
+        <p>Best regards,<br><span class="email-tag">[Signature]</span></p>
+      </div>
+    </div>
+
+    <p>If the professor didn't respond to your first email, feel free to omit the lines about thanking them for the previous conversation. Obviously, adjust this template based on the professor and any previous conversation(s) held.</p>
+  </section>
+
+  <!-- Writing Advice -->
+  <section class="section" id="writing">
+    <h2 class="section-title">Writing Advice</h2>
+    <p>The writing advice below applies to both university statements and the NSF-GRFP. Read this section carefully before diving into either.</p>
+    <h3 class="section-subtitle">Your Main Argument</h3>
+    <div class="reminder-box">
+    <strong>EVERY SENTENCE YOU WRITE MUST COMMUNICATE ONE OF THESE THREE THINGS:</strong>
+    1. I am the perfect person to do this research.<br>
+    2. I am going to the perfect place to do this research.<br>
+    3. I will learn the right information through this experience to become a leader in the field.
+    </div>
+    <p>Always use direct language instead of passive language. The EXPERIMENT or CODE or PROJECT is not doing anything – YOU ARE. The word "I" is your best friend!</p>
+    <p>A few examples:</p>
+    <ul class="doc-list">
+      <li>Instead of "This upgrade will allow Project 8 to…", say "Through this upgrade, I will demonstrate…"</li>
+      <li>Instead of "I will expand on previous work…", say "My background in machine learning positions me as the ideal candidate to lead this research on…"</li>
+      <li>Instead of "Further study could be performed on...", say "I will build on these findings by..."</li>
+    </ul>
+    <p>You have to convince these reviewers that they would be silly not to accept you!</p>
+    <p>I always recommend <b>bolding</b> your main arguments every paragraph or so. This helps reviewers easily find the most important sentences of your statements. For the GRFP specifically, the NSF rubrics include boxes for "intellectual merit" and "broader impacts" (more on these later) where reviewers are supposed to provide reasons you meet those marks. Make it extremely easy for them to find, copy, and paste your sentences into these boxes! Bolding also helps you remember your "why"!</p>
+    <h3 class="section-subtitle">Formatting</h3>
+    <p>Make sure to double, triple, and quadruple check your formatting. Some universities want the documents titled specific ways, specific wording in the headers, double versus single spaced, etc. For the GRFP, the NSF will return without review (RWR) if your document is formatted incorrectly. For reference, my GRFP materials are formatted for the 2025-26 application cycle: solicitation <a href="https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program/nsf25-547/solicitation" target="_blank">NSF 25-547</a>.</p>
+    <h3 class="section-subtitle">Getting Feedback</h3>
+    <p>HAVE AS MANY PEOPLE REVIEW YOUR MATERIALS AS POSSIBLE! Undergraduate advisors are fantastic resources because all of them have applied to and been accepted to graduate school. Current graduate students and post-doctoral researchers are also great resources for similar reasons. Even roommates, friends, and family who aren't in STEM are fantastic resources for all of your materials – your personal statements should have a clear enough flow and argument that everyone can read your passion for your research.</p>
+    <p>For the GRFP, many professors have applied for NSF grants which also require discussing intellectual merit and broader impacts, so they can provide advice on those requirements. Graduate students who have been awarded the NSF-GRFP or an honorable mention are your GREATEST resource – you can find a full list of these winners on the <a href="https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList" target="_blank">NSF website</a>. </p>
+    <h3 class="section-subtitle">Artificial Intelligence (AI) Usage</h3>
+    <p>AI is an unavoidable tool these days. There are things it's helpful for, but there are also ways it can harm your applications. Under no circumstances should you be having AI write your statements. Not only will AI produce a less captivating story because it is not YOU, but it will also spit out an essay that reads exactly like other applicants who used AI. It can be a great tool for checking grammar mistakes, providing suggestions for an individual sentence or phrase that you're struggling with wording, or scanning for words or phrases that you're using too often. In a perfect world, you don't use it at all, but be smart about using it if you do. Your essays need to reflect you – your goals, your struggles, and your accomplishments – and AI doesn't know those things about you.</p>
+  </section>
+
+  <!-- University Application Materials -->
+  <section class="section" id="university-materials">
+    <h2 class="section-title">University Application Materials</h2>
+
+    <h3 class="section-subtitle">Personal and Academic Statements</h3>
+    <p>When you're first developing your statements, find your strongest argument to get into a school and don't worry on the specifics until later. For me, it was pursuing a strong intersection of instrumentation and computation because I had solid experience and interest in both. This general argument allowed me cast a wide net over current experiments and universities to give myself the best chance of landing an offer.</p>
+    <p>The statements I wrote were adjusted for each university I applied to in order to mention specific opportunities for that university. The general flow of my statements remained the same (especially the overview of my research experience), but WHY I was a good fit for each school changed for each application. This requires you do extensive research on each university before applying. What organizations could you join or lead? What opportunities does this university have that makes it the perfect place for YOUR research? Why are YOU the perfect person for this department? Name drop these organizations in your application.</p>
+    <p>Some applications asked for one statement, others asked for a "personal" and "academic" statement. I have provided an example of all three situations – the personal and academic statements are essentially the combined statement split by their relevant content.</p>
+    <p>Almost every university had short answer questions that asked about leadership, research interests, service work, or other activities. In these cases, most of the time I could paste a chunk from my already-written statement (with some further explanation and embellishments). Then, to avoid repetition in my attached statements, I would say "As outlined in my leadership personal experience response, I…" and briefly remind them of this activity. But I removed the details since they were stated in the short response! This is why my combined statement example provided in the documents section is slightly over two pages. In my submitted applications, it always ended up being two pages because there were sentences deleted.</p>
+
+    <h3 class="section-subtitle">Curriculum Vitae (CV)</h3>
+    <p>For your CV, make sure your formatting is easy to read and follow, and keep the most important categories at the top of your CV. Education and research experience should be first! You can find templates everywhere online, or feel free to use the look of mine as inspiration. The CV example provided in the documents section was my CV at the time of my applications.</p>
+    <p>Remember that ANY activities you've participated in can be made into an argument about academics, so tailor your explanation of these activities to explain how they've prepared you for graduate school. See my "Off the Lake Productions" theatre leadership experience for an example.</p>
+    <p>You're welcome to put select activities that haven't happened yet onto your CV if they're confirmed. My "APS Global Physics Summit Conference" in 2026 is an example – my abstract had been approved by the conference by the application deadlines, so I was free to mention it.</p>
+    <p>Leave off things that may not "help" you. For example, if your GPA isn't fantastic, no need to include it!</p>
+  </section>
+
+  <!-- NSF-GRFP -->
+  <section class="section" id="nsf-grfp">
+    <h2 class="section-title">NSF-GRFP Application Materials</h2>
+    <p>The NSF-GRFP is a FANTASTIC opportunity that everyone should take advantage of. If you are awarded, you receive three full years of funding. It's one of the nation's most prestigious fellowships and is well known across all STEM disciplines, making it a fantastic line on a CV for awardees and honorable mentions. This makes a student a much more competitive applicant, and can actually get you into schools that you're originally waitlisted or denied from. The main components of the application are a personal statement and 3-year research project proposal.</p>
+
+    <h3 class="section-subtitle">Intellectual Merit and Broader Impacts</h3>
+    <p>The NSF has two categories that must be included in your materials, "intellectual merit" and "broader impacts".</p>
+    <p>Intellectual merit is focused on the advancement of academic knowledge. So for a personal statement, it could be the research experience you've had and the skills you possess. For a research proposal, it could be the research project you will carry out and how it will impact your specific field and subfield.</p>
+    <p>Broader impacts is focused on the advancement of societal contribution. So for a personal statement, it could be the experiences you've had in organizations, leadership experiences, outreach, or service you've done. For a research proposal it could be how your research project will influence fields beyond your own, society as a whole, and the people you work with.</p>
+    <p>For both sections, you MUST be specific. Reviewers want to know the concrete ways you will increase diversity or outreach in STEM, not just that you will do it. Everyone says that in their application. It is WAY more impactful to state one thing in each category and beef up that explanation than to give a laundry list of buzzwords that aren't specific enough for reviewers to believe you will do them.</p>
+    <h3 class="section-subtitle">Personal Statement</h3>
+    <p>You will find that my personal statement for the NSF-GRFP is very similar to my university application statements! The GRFP was due at the start of November and was therefore my first priority – putting so much time and effort into that application meant that there wasn't a ton of adjusting I needed to do before my university applications. This made my life much easier (and is why I recommend everyone applies for the GRFP – you're going to be doing half of the application anyway!)</p>
+    <p>This statement should not be technical, but instead be a narrative of your experiences, how they've shaped you, and why you want to pursue research because of them. DO NOT go into technical details of your past/future research in this statement because that should be done in the research proposal. Instead, why are you wanting to pursue this field? What do you love about research? What did your past research experiences teach you about your academic interests and career goals?</p>
+
+    <h3 class="section-subtitle">Research Proposal</h3>
+    <p>To develop a research proposal, your project does NOT have to be the project you will 100% pursue in graduate school. I personally was awarded the NSF-GRFP and chose to attend a completely different school with a different professor than my application stated I would. However, writing your proposal with a professor outside of your undergraduate institution IS helpful because it seems more likely to reviewers that this is your actual plan for post-graduation.</p>
+    <p>I chose to work with my summer REU professor, who I already had a great relationship and contact with. Professors at schools you're interested in attending will oftentimes be willing to write a proposal with you – if you get the award and come to their group, they have a free student! So reach out to them, it won't hurt. Otherwise, you can totally write a proposal with a professor you worked with at your undergraduate institution.</p>
+    <p>Writing a project proposal was so overwhelming of a concept to me I almost didn't consider applying for the NSF-GRFP. But, your advisor won't expect you to develop a 3+ year project all by yourself! (And if they do, maybe work with someone else...) They should know that this is a brand new experience for you and will be willing to give you ideas for a proposal. Take these ideas and run with them. Read papers, google, and do other research until you have a solid draft. Then reach out again to get feedback! I met with my project proposal advisor around 4 times over the two months of writing my statements.</p>
+    <p>There will be lots of room for improvement, so never take feedback personally. This is your first time really developing a research proposal, and your advisor has likely been doing that for years! Make sure you work with a professor who is relatively easy to contact for that reason – there will be lots of back and forth.</p>
+    <p>The background section at the beginning of your proposal should quickly state your goal – reviewers need to see that thesis statement as soon as possible. Then, provide relevant technical information so people within and outside of your field can understand your proposal. Your project should be ambitious but feasible. Ambitious in the sense that it will have an exciting goal and large impacts, but feasible because the people and place you're going to work at already have the equipment and resources necessary to support you. And, you have relevant past experience and knowledge!</p>
+    <p>It's also helpful to mention in your proposal how you will continue your project after the three years of funding are complete. The NSF wants to fund something bigger picture.</p>
+
+    <h3 class="section-subtitle">References</h3>
+    <p>For the references cited in my proposal, my year's solicitation didn't give a specific style for formatting, so I chose to do a condensed combination of APS style and other academic styles for space reasons. Just make sure you include the specific information the solicitation does ask for, like the paper's archive number.</p>
+
+  </section>
+
+  <!-- Miscellaneous -->
+  <section class="section" id="misc">
+    <h2 class="section-title">Miscellaneous Advice</h2>
+
+    <h3 class="section-subtitle">Keeping Notes</h3>
+    <p>TAKE NOTES IN EVERY MEETING YOU HAVE! Whether it's with a current mentor or advisor reviewing your application materials, or with a potential graduate school advisor, WRITE IT ALL DOWN DURING THE MEETING. It will be so useful to go back and reference those notes over and over again throughout the year as you're making difficult decisions!</p>
+
+    <h3 class="section-subtitle">Letter Writers</h3>
+    <p>If possible, pick three mentors who had an impact on your research experience to write your letters. Research advisors are fantastic, especially ones that mentored you through summer REUs or other programs. Professors from classes can write good letters, but won't be as impactful to an admissions committee, so try to have at least two writers that are research based first.</p>
+    <p>As deadlines approached, I sent email reminders to all of my letter writers at the one-month, three-week, two-week, and one-week marks, then followed up daily until each letter was submitted.</p>
+
+    <h3 class="section-subtitle">Application Fee Waivers</h3>
+    <p>I only paid a fee to two of the ten schools I applied to! There are many ways to get a fee waiver, so make sure to explore the university's FAQ section before submitting your applications. They always have a section outlining who they provide waivers for.</p>
+    <p>For me, multiple programs accepted a fee waiver because I had done an REU program. Look into the <a href="https://btaa.org/resources-for/students/freeapp/eligibility" target="_blank">Big 10 FreeApp eligibility</a> to see if this applies to you. I also went to a conference in October and visited the tables of all the universities I was remotely interested in – I got a few fee waivers from there as well. You can also get waived based on financial hardship, for being a first generation student, etc.</p>
+
+    <h3 class="section-subtitle">Graduation Record Examination (GRE)</h3>
+    <p>I didn't take the general or physics GRE. These exams are being phased out for many programs – none of the ones I was interested in required it and very few recommended it. I referred to this <a href="https://docs.google.com/spreadsheets/d/19UhYToXOPZkZ3CM469ru3Uwk4584CmzZyAVVwQJJcyc/edit?gid=0#gid=0" target="_blank">community spreadsheet</a> to see if programs required it, as well as university websites.</p>
+  </section>
+
+  <!-- After an Offer -->
+  <section class="section" id="after-offer">
+    <h2 class="section-title">After Receiving an Offer</h2>
+    <p>Congratulations! Receiving an offer is a huge deal, and you should be extremely proud! So what's next?</p>
+    <p>Most programs will invite you to a visit weekend — attend these if you can, as they are incredibly valuable for getting a feel for the department, city, and people you'd potentially be working with. While you're there, talk to as many current graduate students as possible as well as your potential advisors, as they will give you the most honest picture of what life in that program is actually like. Don't be afraid to ask anyone hard questions about funding security, advisor relationships, and work-life balance. Shameless plug, if you're interested in my university visit experiences, you can check out some <a href="https://www.youtube.com/@rachelwhitevlogs" target="_blank">quick vlogs I made</a>. </p>
+    <p>If you have multiple offers, compare them holistically — factors to consider include:</p>
+    <ul class="doc-list">
+      <li>Stipend and cost of living in that city</li>
+      <li>Funding guarantees and length</li>
+      <li>Research fit and advisor availability</li>
+      <li>Department culture and student happiness</li>
+      <li>Location and personal life factors</li>
+    </ul>
+    <p>You typically have until April 15th (the national deadline) to make your decision — don't feel pressured to commit early. I committed on April 13th! I waited this long because the NSF-GRFP awardees were announced on April 12th and I knew getting that award would factor into my choice. Just be upfront with the potential advisors you're in contact with about when they can expect your decision. Once you've decided, notify the other programs promptly so that waitlisted students can receive their offers!</p>
+  </section>
+
+  <!-- Documents -->
+  <section class="section" id="documents">
+    <h2 class="section-title">Documents</h2>
+    <p>All the materials below have put placeholders in for names of professors, universities, and other identifying details. Use these as examples of flow, content, and argument only. DO NOT copy and paste.</p>
+
+    <div class="doc-grid">
+      <div class="doc-card">
+        <div class="doc-icon">📄</div>
+        <p class="doc-title">Personal Statement</p>
+        <p class="doc-desc">My narrative personal statement used for university applications, describing my research journey and motivation for pursuing a PhD, for universities requesting separate personal and academic statements.</p>
+        <a class="doc-btn" href="personal_statement.pdf" target="_blank">⬇ Download PDF</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-icon">📄</div>
+        <p class="doc-title">Academic Statement</p>
+        <p class="doc-desc">The academic portion of my statement, focused on research experience and future goals, for universities requesting separate personal and academic statements.</p>
+        <a class="doc-btn" href="academic_statement.pdf" target="_blank">⬇ Download PDF</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-icon">📄</div>
+        <p class="doc-title">Combined Statement</p>
+        <p class="doc-desc">My full combined personal and academic statement for applications requesting a single document. Slightly over two pages in its original form.</p>
+        <a class="doc-btn" href="combined_statement.pdf" target="_blank">⬇ Download PDF</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-icon">📄</div>
+        <p class="doc-title">GRFP Personal Statement</p>
+        <p class="doc-desc">Very similar to the university version — writing this first made the university applications significantly easier.</p>
+        <a class="doc-btn" href="grfp_personal_statement.pdf" target="_blank">⬇ Download PDF</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-icon">📄</div>
+        <p class="doc-title">GRFP Research Proposal</p>
+        <p class="doc-desc">The research proposal I developed alongside an advisor for a three year graduate research project.</p>
+        <a class="doc-btn" href="grfp_research_proposal.pdf" target="_blank">⬇ Download PDF</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-icon">📄</div>
+        <p class="doc-title">Curriculum Vitae (CV)</p>
+        <p class="doc-desc">My CV at the time of application. Use as a formatting and content reference only.</p>
+        <a class="doc-btn" href="cv.pdf" target="_blank">⬇ Download PDF</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-icon">📊</div>
+        <p class="doc-title">University Spreadsheet</p>
+        <p class="doc-desc">An example of my university tracking spreadsheet, including an overview sheet and a university-specific example tab for Michigan State — the school I'll be attending! #GoGreen</p>
+        <a class="doc-btn" href="university_spreadsheet.pdf" target="_blank">⬇ Download PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>GOOD LUCK on your applications. Have confidence that you have done the necessary preparation throughout your undergraduate years, and write honestly about your passions and goals.</p>
+    <p>For any questions, feel free to reach out! I will do my best to respond as quickly as possible.</p>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:sunnyrach2004@gmail.com">
+        <span class="contact-icon">✉️</span>
+        sunnyrach2004@gmail.com
+      </a>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
